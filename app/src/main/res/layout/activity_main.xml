@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <!--  <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="妖魔鬼怪"
+          tools:ignore="MissingConstraints" />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <FrameLayout
+            android:id="@+id/main_body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white">
+
+            <!-- <TabWidget
+                android:id="@android:id/tabs"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.0" />-->
+            <RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:divider="#E4E4E4"
+                android:dividerHeight="1dp"
+                android:listSelector="#bababa" />
+
+            <RadioGroup
+                android:gravity="center_vertical"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal"
+                android:id="@id/main_radio"
+                android:background="#f4f4f4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@id/radio_button0"
+                    android:layout_marginTop="2.0dip"
+                    android:text="@string/main_curose"
+                    android:drawableTop="@mipmap/ic_course_selected"
+                    style="@style/main_tab_bottom" />
+
+                <RadioButton
+                    android:id="@id/radio_button1"
+                    android:layout_marginTop="2.0dip"
+                    android:text="@string/main_homework"
+                    android:drawableTop="@mipmap/ic_exercise"
+                    style="@style/main_tab_bottom" />
+
+                <RadioButton
+                    android:id="@id/radio_button2"
+                    android:layout_marginTop="2.0dip"
+                    android:text="@string/main_practice"
+                    android:drawableTop="@mipmap/ic_message"
+                    style="@style/main_tab_bottom" />
+
+                <RadioButton
+                    android:id="@id/radio_button3"
+                    android:layout_marginTop="2.0dip"
+                    android:text="@string/main_myself"
+                    android:drawableTop="@mipmap/ic_my"
+                    style="@style/main_tab_bottom" />
+            </RadioGroup>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

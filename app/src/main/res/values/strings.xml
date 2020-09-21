@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WidgetDemo</string>
+    <string name="main_curose">课堂</string>
+    <string name="main_homework">习题</string>
+    <string name="main_practice">实战</string>
+    <string name="main_myself">我</string>
+</resources>
